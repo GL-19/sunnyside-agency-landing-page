@@ -1,3 +1,4 @@
+import { Gallery } from "./components/Gallery";
 import { Header } from "./components/Header";
 import { LandingPageMain } from "./components/LandingPageMain";
 import { useScreenWidthThreshold } from "./hooks/useScreenWidthThreshold";
@@ -8,6 +9,7 @@ function App() {
 		<main>
 			<Header isDesktop={isDesktop} />
 			<LandingPageMain />
+			<Gallery />
 		</main>
 	);
 }
