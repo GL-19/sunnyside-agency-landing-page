@@ -8,6 +8,7 @@ export const DesktopLinksContainer = styled.div`
 	align-items: center;
 	gap: 1.5rem;
 `;
+
 export const HeaderContainer = styled.header`
 	width: 100%;
 	height: 5rem;
@@ -24,11 +25,12 @@ export const Container = styled.div`
 	align-items: center;
 	gap: 6rem;
 
+	min-height: 100vh;
 	width: 100%;
 	padding: 0 1.75rem;
-	height: 100vmax;
+
 	background: no-repeat url(${desktopHeaderImg});
-	background-size: 100%;
+	background-size: 100% 100%;
 
 	h1 {
 		color: var(--white);
@@ -39,6 +41,7 @@ export const Container = styled.div`
 
 	@media screen and (max-width: 850px) {
 		gap: 3rem;
+		min-height: 66vh;
 
 		h1 {
 			font-size: 2.7rem;
@@ -47,6 +50,7 @@ export const Container = styled.div`
 
 	@media screen and (max-width: 450px) {
 		background-image: url(${mobileHeaderImg});
+		min-height: 66vh;
 
 		h1 {
 			font-size: 2.4rem;

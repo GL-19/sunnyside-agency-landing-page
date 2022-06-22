@@ -3,6 +3,7 @@ import arrowDown from "../../images/icon-arrow-down.svg";
 
 import { ContactButton, DropDown, LinkButton } from "./components";
 import { Container, DesktopLinksContainer, HeaderContainer } from "./styles";
+
 interface HeaderProps {
 	isDesktop: boolean;
 }

@@ -47,7 +47,7 @@ export const GlobalStyles = createGlobalStyle`
 
   button {
     cursor: pointer;
-    &:hover {
+    &:hover, &:active {
       filter: opacity(0.5);
     }
   }

@@ -1,11 +1,13 @@
 import { Header } from "./components/Header";
-import { useDesktop } from "./hooks/useDesktop";
+import { LandingPageMain } from "./components/LandingPageMain";
+import { useScreenWidthThreshold } from "./hooks/useScreenWidthThreshold";
 
 function App() {
-	const { isDesktop } = useDesktop(850);
+	const isDesktop = useScreenWidthThreshold(850);
 	return (
 		<main>
 			<Header isDesktop={isDesktop} />
+			<LandingPageMain />
 		</main>
 	);
 }
