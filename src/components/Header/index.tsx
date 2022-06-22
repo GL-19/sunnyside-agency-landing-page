@@ -1,17 +1,38 @@
 import logo from "../../images/logo.svg";
 import arrowDown from "../../images/icon-arrow-down.svg";
-import { Container, HeaderContainer } from "./styles";
+import hamburger from "../../images/icon-hamburger.svg";
+import { Container, DropDown, HeaderContainer } from "./styles";
 
-function Header() {
+interface HeaderProps {
+	isMobile: boolean;
+}
+
+function Header({ isMobile }: HeaderProps) {
 	return (
 		<Container>
 			<HeaderContainer>
 				<img src={logo} alt="logo" />
 				<div>
-					<button>About</button>
-					<button>Services</button>
-					<button>Projects</button>
-					<button>CONTACT</button>
+					{isMobile ? (
+						<>
+							<DropDown>
+								<img src={hamburger} alt="hamburguer" />
+								<div>
+									<a href="">About</a>
+									<a href="">Services</a>
+									<a href="">Projects</a>
+									<button>CONTACT</button>
+								</div>
+							</DropDown>
+						</>
+					) : (
+						<>
+							<a href="">About</a>
+							<a href="">Services</a>
+							<a href="">Projects</a>
+							<button>CONTACT</button>
+						</>
+					)}
 				</div>
 			</HeaderContainer>
 
