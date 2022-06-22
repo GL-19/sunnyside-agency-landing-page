@@ -31,19 +31,3 @@ export const Container = styled.div`
 		color: var(--white);
 	}
 `;
-
-export const DropDown = styled.div`
-	div {
-		position: absolute;
-
-		display: none;
-		min-width: 5rem;
-	}
-
-	&:hover {
-		div {
-			display: flex;
-			flex-direction: column;
-		}
-	}
-`;
