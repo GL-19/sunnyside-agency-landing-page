@@ -1,11 +1,11 @@
 import { Header } from "./components/Header";
-import { useMobile } from "./hooks/useMobile";
+import { useDesktop } from "./hooks/useDesktop";
 
 function App() {
-	const isMobile = useMobile();
+	const { isDesktop } = useDesktop(850);
 	return (
 		<main>
-			<Header isMobile={isMobile} />
+			<Header isDesktop={isDesktop} />
 		</main>
 	);
 }

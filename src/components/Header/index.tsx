@@ -1,35 +1,32 @@
 import logo from "../../images/logo.svg";
 import arrowDown from "../../images/icon-arrow-down.svg";
 
-import { DropDown } from "../DropDown";
-import { Container, HeaderContainer } from "./styles";
-
+import { ContactButton, DropDown, LinkButton } from "./components";
+import { Container, DesktopLinksContainer, HeaderContainer } from "./styles";
 interface HeaderProps {
-	isMobile: boolean;
+	isDesktop: boolean;
 }
 
-function Header({ isMobile }: HeaderProps) {
+function Header({ isDesktop }: HeaderProps) {
 	return (
 		<Container>
 			<HeaderContainer>
 				<img src={logo} alt="logo" />
 				<div>
-					{isMobile ? (
-						<>
-							<DropDown>
-								<a href="">About</a>
-								<a href="">Services</a>
-								<a href="">Projects</a>
-								<button>CONTACT</button>
-							</DropDown>
-						</>
+					{isDesktop ? (
+						<DesktopLinksContainer>
+							<LinkButton>About</LinkButton>
+							<LinkButton>Services</LinkButton>
+							<LinkButton>Projects</LinkButton>
+							<ContactButton>CONTACT</ContactButton>
+						</DesktopLinksContainer>
 					) : (
-						<>
-							<a href="">About</a>
-							<a href="">Services</a>
-							<a href="">Projects</a>
-							<button>CONTACT</button>
-						</>
+						<DropDown>
+							<LinkButton color="gray">About</LinkButton>
+							<LinkButton color="gray">Services</LinkButton>
+							<LinkButton color="gray">Projects</LinkButton>
+							<ContactButton backgroundColor="yellow">CONTACT</ContactButton>
+						</DropDown>
 					)}
 				</div>
 			</HeaderContainer>

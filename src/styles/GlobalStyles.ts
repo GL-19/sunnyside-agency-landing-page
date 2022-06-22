@@ -20,4 +20,36 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
+  body {
+    font-size: 16px;
+  }
+
+  p, button, h2 {
+    font-size: 1.125rem;
+    
+  }
+
+  p, button {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+  }
+
+  button {
+    cursor: pointer;
+    &:hover {
+      filter: opacity(0.5);
+    }
+  }
+
 `;
