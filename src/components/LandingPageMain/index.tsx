@@ -1,47 +1,55 @@
+import { SectionBackground } from "./components/SectionBackground";
 import { LandingPageContainer } from "./styles";
-
+import desktopPhotography from "../../images/desktop/image-photography.jpg";
+import mobilePhotography from "../../images/mobile/image-photography.jpg";
+import desktopGraphicDesign from "../../images/desktop/image-graphic-design.jpg";
+import mobileGraphicDesign from "../../images/mobile/image-graphic-design.jpg";
+import desktopStandOut from "../../images/desktop/image-stand-out.jpg";
+import mobileStandOut from "../../images/mobile/image-stand-out.jpg";
+import desktopTransform from "../../images/desktop/image-transform.jpg";
+import mobileTransform from "../../images/mobile/image-transform.jpg";
+import { SectionWithoutBackground } from "./components/SectionWithoutBackground";
+import { SectionWithoutText } from "./components/SectionWithoutText";
 export function LandingPageMain() {
 	return (
 		<LandingPageContainer>
-			<div>
-				<h2>Transform your brand</h2>
-				<p>
-					We are a full-service creative agency specializing in helping brands grow fast.
-					Engage your clients through compelling visuals that do most of the marketing for
-					you.
-				</p>
-				<a href="#">Learn more</a>
-			</div>
+			<SectionWithoutBackground
+				title="Transform your brand"
+				text="We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you."
+			/>
 
-			<div></div>
+			<SectionWithoutText
+				desktopBackground={desktopTransform}
+				mobileBackground={mobileTransform}
+			/>
 
-			<div></div>
+			<SectionWithoutText
+				desktopBackground={desktopStandOut}
+				mobileBackground={mobileStandOut}
+			/>
 
-			<div>
-				<h2>Stand out to the right audience</h2>
-				<p>
-					Using a collaborative formula of designers, researchers, photographers,
-					videographers, and copywriters, we’ll build and extend your brand in digital
-					places.
-				</p>
-				<a href="#">Learn more</a>
-			</div>
+			<SectionWithoutBackground
+				title="Stand out to the right audience"
+				text="Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        "
+			/>
 
-			<div>
-				<h2>Graphic design</h2>
-				<p>
-					Great design makes you memorable. We deliver artwork that underscores your brand
-					message and captures potential clients’ attention.
-				</p>
-			</div>
+			<SectionBackground
+				title="Graphic design"
+				text="Great design makes you memorable. We deliver artwork that underscores your brand
+        message and captures potential clients’ attention."
+				desktopBackground={desktopGraphicDesign}
+				mobileBackground={mobileGraphicDesign}
+			/>
 
-			<div>
-				<h2>Photography</h2>
-				<p>
-					Increase your credibility by getting the most stunning, high-quality photos that
-					improve your business image.
-				</p>
-			</div>
+			<SectionBackground
+				title="Photography"
+				text="Increase your credibility by getting the most stunning, high-quality photos that
+      improve your business image."
+				desktopBackground={desktopPhotography}
+				mobileBackground={mobilePhotography}
+			/>
 		</LandingPageContainer>
 	);
 }

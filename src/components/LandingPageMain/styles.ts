@@ -1,33 +1,19 @@
 import styled from "styled-components";
 
-export const PhotoContainer = styled.div``;
-export const TextContainer = styled.div``;
-export const SubjectsContainer = styled.div``;
-
 export const LandingPageContainer = styled.div`
 	width: 100%;
-	max-height: 150vw;
+	height: auto;
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
 
-	@media screen and (max-width: 850px) {
-		grid-template-columns: 1fr;
-	}
-
-	div {
-		width: 100%;
-
-		padding: 5rem;
-
+	@media screen and (max-width: 650px) {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 
-		border: solid 1px black;
-
-		@media screen and (max-width: 850px) {
+		div:nth-child(2) {
+			order: -1;
 		}
 	}
 `;
