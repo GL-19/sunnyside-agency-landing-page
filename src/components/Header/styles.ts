@@ -41,7 +41,7 @@ export const Container = styled.div`
 
 	@media screen and (max-width: 850px) {
 		gap: 3rem;
-		min-height: 66vh;
+		min-height: 100vh;
 
 		h1 {
 			font-size: 2.7rem;
