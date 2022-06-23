@@ -31,7 +31,7 @@ const Container = styled.div`
 		padding: 3rem;
 	}
 
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 650px) {
 		min-height: 125vw;
 		text-align: center;
 		padding: 4rem 2rem;

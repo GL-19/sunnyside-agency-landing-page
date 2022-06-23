@@ -14,7 +14,7 @@ export const SectionWithoutText = styled.div<SectionWithoutTextProps>`
 	background: no-repeat url(${({ desktopBackground }) => desktopBackground});
 	background-size: 100% 100%;
 
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 650px) {
 		height: 100vw;
 		background-image: url(${({ mobileBackground }) => mobileBackground});
 	}

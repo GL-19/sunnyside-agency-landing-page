@@ -48,7 +48,7 @@ export const TextContainer = styled.div`
 	margin-bottom: 10vw;
 	height: auto;
 
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 650px) {
 		max-width: 70%;
 	}
 
