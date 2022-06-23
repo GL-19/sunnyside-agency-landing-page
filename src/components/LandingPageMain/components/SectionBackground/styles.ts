@@ -21,8 +21,6 @@ export const Container = styled.div<ContainerProps>`
 	height: 100%;
 	min-height: 50vw;
 
-	padding: 5vw 0;
-
 	background: no-repeat url(${({ desktopBackground }) => desktopBackground});
 	background-size: 100% 100%;
 
@@ -51,6 +49,11 @@ export const TextContainer = styled.div`
 	height: auto;
 
 	@media screen and (max-width: 450px) {
+		max-width: 70%;
+	}
+
+	@media screen and (max-width: 450px) {
 		max-width: 80%;
+		margin-bottom: 15vw;
 	}
 `;
