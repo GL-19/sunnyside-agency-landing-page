@@ -18,7 +18,8 @@ export function SectionWithoutBackground({ title, text }: SectionWithoutBackgrou
 const Container = styled.div`
 	width: 100%;
 	height: 100%;
-	padding: 5rem;
+	min-height: 50vw;
+	padding: 6rem;
 
 	display: flex;
 	flex-direction: column;
@@ -31,14 +32,14 @@ const Container = styled.div`
 	}
 
 	@media screen and (max-width: 450px) {
-		min-height: 100vw;
+		min-height: 125vw;
 		text-align: center;
-		padding: 1.75rem;
+		padding: 4rem 2rem;
 	}
 
 	h1 {
 		color: var(--very-dark-desaturated-blue);
-		font-size: 2.25rem;
+		font-size: 2.5rem;
 		margin-bottom: 1.5rem;
 	}
 

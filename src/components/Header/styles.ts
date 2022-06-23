@@ -34,7 +34,7 @@ export const Container = styled.div`
 
 	h1 {
 		color: var(--white);
-		font-size: 3rem;
+		font-size: 3.375rem;
 		letter-spacing: 0.5rem;
 		text-align: center;
 	}

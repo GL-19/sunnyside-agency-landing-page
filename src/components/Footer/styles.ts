@@ -27,8 +27,8 @@ export const Icon = styled.img`
 
 export const FooterContainer = styled.footer`
 	width: 100%;
-	min-height: 15rem;
-	padding: 3rem 1rem;
+	min-height: 20rem;
+	padding: 5rem 1rem;
 
 	display: flex;
 	flex-direction: column;

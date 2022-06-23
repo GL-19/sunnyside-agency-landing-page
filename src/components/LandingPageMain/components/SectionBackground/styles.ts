@@ -14,16 +14,18 @@ const colorTypes = {
 export const Container = styled.div<ContainerProps>`
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-end;
 	align-items: center;
 
 	width: 100%;
 	height: 100%;
-	min-height: 33rem;
+	min-height: 50vw;
 
 	background: no-repeat url(${({ desktopBackground }) => desktopBackground});
 	background-size: 100% 100%;
 
 	@media screen and (max-width: 450px) {
+		min-height: 125vw;
 		background-image: url(${({ mobileBackground }) => mobileBackground});
 	}
 
@@ -42,7 +44,11 @@ export const Container = styled.div<ContainerProps>`
 `;
 
 export const TextContainer = styled.div`
-	max-width: 21rem;
-	margin-top: 21rem;
+	max-width: 60%;
+	margin-bottom: 10vw;
 	height: auto;
+
+	@media screen and (max-width: 450px) {
+		max-width: 80%;
+	}
 `;
