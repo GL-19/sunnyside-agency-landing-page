@@ -1,24 +1,28 @@
-import logo from "../../images/logo.svg";
 import facebookIcon from "../../images/icon-facebook.svg";
 import twitterIcon from "../../images/icon-twitter.svg";
 import instagramIcon from "../../images/icon-instagram.svg";
 import pinterestIcon from "../../images/icon-pinterest.svg";
+import { FooterLogo } from "../Logo";
+import { FooterContainer, Icon, IconsContainer, LinksContainer } from "./styles";
+import { LinkButton } from "../Buttons";
 
 export function Footer() {
 	return (
-		<footer>
-			<img src={logo} alt="logo" style={{ backgroundColor: "blue" }} />
-			<div>
-				<p>About</p>
-				<p>Services</p>
-				<p>Projects</p>
-			</div>
-			<div>
-				<img src={facebookIcon} alt="facebook-icon" />
-				<img src={instagramIcon} alt="instagram-icon" />
-				<img src={twitterIcon} alt="twitter-icon" />
-				<img src={pinterestIcon} alt="pinterest-icon" />
-			</div>
-		</footer>
+		<FooterContainer>
+			<FooterLogo />
+
+			<LinksContainer>
+				<LinkButton color="darkDesaturatedCyan">About</LinkButton>
+				<LinkButton color="darkDesaturatedCyan">Services</LinkButton>
+				<LinkButton color="darkDesaturatedCyan">Projects</LinkButton>
+			</LinksContainer>
+
+			<IconsContainer>
+				<Icon src={facebookIcon} alt="facebook-icon" />
+				<Icon src={instagramIcon} alt="instagram-icon" />
+				<Icon src={twitterIcon} alt="twitter-icon" />
+				<Icon src={pinterestIcon} alt="pinterest-icon" />
+			</IconsContainer>
+		</FooterContainer>
 	);
 }

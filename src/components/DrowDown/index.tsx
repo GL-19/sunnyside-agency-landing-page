@@ -1,7 +1,7 @@
 import { ReactNode, useState } from "react";
 import styled from "styled-components";
 
-import hamburger from "../../../images/icon-hamburger.svg";
+import hamburger from "../../images/icon-hamburger.svg";
 
 interface DropDownProps {
 	children: ReactNode;
@@ -30,11 +30,12 @@ const Container = styled.div<ContainerProps>`
 
 		position: absolute;
 		margin: 1rem -14.5rem;
-		padding: 2rem;
-		gap: 2rem;
 
 		max-width: 90vw;
 		min-width: 16rem;
+
+		padding: 2rem;
+		gap: 2rem;
 
 		background-color: var(--white);
 	}

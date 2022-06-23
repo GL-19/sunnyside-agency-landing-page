@@ -1,7 +1,8 @@
-import logo from "../../images/logo.svg";
 import arrowDown from "../../images/icon-arrow-down.svg";
+import { HeaderLogo } from "../Logo";
 
-import { ContactButton, DropDown, LinkButton } from "./components";
+import { DropDown } from "../DrowDown";
+import { LinkButton, ContactButton } from "../Buttons";
 import { Container, DesktopLinksContainer, HeaderContainer } from "./styles";
 
 interface HeaderProps {
@@ -12,7 +13,7 @@ function Header({ isDesktop }: HeaderProps) {
 	return (
 		<Container>
 			<HeaderContainer>
-				<img src={logo} alt="logo" />
+				<HeaderLogo />
 				<div>
 					{isDesktop ? (
 						<DesktopLinksContainer>

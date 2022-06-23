@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 interface LinkButtonProps {
-	color?: "white" | "gray";
+	color?: "white" | "gray" | "darkDesaturatedCyan";
 }
 
 const colorTypes = {
 	white: "var(--white)",
 	gray: "var(--dark-grayish-blue)",
+	darkDesaturatedCyan: "var(--dark-desaturated-cyan)",
 };
 
 export const LinkButton = styled.button<LinkButtonProps>`
