@@ -1,4 +1,4 @@
-import { ClientsTestimonials } from "./components/ClientsTestimonial";
+import { ClientsTestimonials } from "./components/ClientsTestimonials";
 import { Footer } from "./components/Footer";
 import { Gallery } from "./components/Gallery";
 import { Header } from "./components/Header";
