@@ -21,6 +21,8 @@ export const Container = styled.div<ContainerProps>`
 	height: 100%;
 	min-height: 50vw;
 
+	padding: 5vw 0;
+
 	background: no-repeat url(${({ desktopBackground }) => desktopBackground});
 	background-size: 100% 100%;
 
