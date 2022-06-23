@@ -15,10 +15,8 @@ export const ContactButton = styled.button<ContactButtonProps>`
 
 	border: none;
 	border-radius: 2rem;
-	padding: 1rem 2rem;
+	padding: 0.75rem 1.75rem;
 	font-family: "Fraunces", serif;
+	font-weight: 700;
+	font-size: 1rem;
 `;
-
-ContactButton.defaultProps = {
-	backgroundColor: "white",
-};

@@ -7,7 +7,7 @@ import { Container, TestimonialsContainer } from "./styles";
 export function ClientsTestimonials() {
 	return (
 		<Container>
-			<h1>Clients Testimonials</h1>
+			<h1>Client Testimonials</h1>
 
 			<TestimonialsContainer>
 				<Testimonial

@@ -1,4 +1,3 @@
-import { SectionBackground } from "./components/SectionBackground";
 import { LandingPageContainer } from "./styles";
 import desktopPhotography from "../../images/desktop/image-photography.jpg";
 import mobilePhotography from "../../images/mobile/image-photography.jpg";
@@ -8,8 +7,11 @@ import desktopStandOut from "../../images/desktop/image-stand-out.jpg";
 import mobileStandOut from "../../images/mobile/image-stand-out.jpg";
 import desktopTransform from "../../images/desktop/image-transform.jpg";
 import mobileTransform from "../../images/mobile/image-transform.jpg";
-import { SectionWithoutBackground } from "./components/SectionWithoutBackground";
-import { SectionWithoutText } from "./components/SectionWithoutText";
+import {
+	SectionBackground,
+	SectionWithoutBackground,
+	SectionWithoutText,
+} from "./components";
 export function LandingPageMain() {
 	return (
 		<LandingPageContainer>
@@ -39,6 +41,7 @@ export function LandingPageMain() {
 				title="Graphic design"
 				text="Great design makes you memorable. We deliver artwork that underscores your brand
         message and captures potential clients’ attention."
+				color="cyan"
 				desktopBackground={desktopGraphicDesign}
 				mobileBackground={mobileGraphicDesign}
 			/>

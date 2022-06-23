@@ -9,12 +9,12 @@ export const Photo = styled.img`
 
 export const Text = styled.p`
 	font-size: 1rem;
-	line-height: 1.25rem;
+	line-height: 1.125rem;
 	color: var(--very-dark-grayish-blue);
 `;
 
 export const Name = styled.h2`
-	font-size: 1rem;
+	font-size: 1.125rem;
 	font-weight: 900;
 	color: var(--very-dark-desaturated-blue);
 `;

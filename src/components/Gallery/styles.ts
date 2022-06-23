@@ -9,7 +9,7 @@ export const GalleryImage = styled.div<GalleryImageProps>`
 	width: 100%;
 	height: 100%;
 	max-width: 25vw;
-	min-height: 25vw;
+	min-height: 30vw;
 
 	background: no-repeat url(${({ desktopBackground }) => desktopBackground});
 	background-size: 100% 100%;
@@ -29,5 +29,6 @@ export const GalleryContainer = styled.div`
 
 	@media screen and (max-width: 450px) {
 		grid-template-columns: 1fr 1fr;
+		min-height: 0;
 	}
 `;

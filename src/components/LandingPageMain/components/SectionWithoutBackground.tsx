@@ -8,8 +8,9 @@ interface SectionWithoutBackgroundProps {
 export function SectionWithoutBackground({ title, text }: SectionWithoutBackgroundProps) {
 	return (
 		<Container>
-			<h2>{title}</h2>
+			<h1>{title}</h1>
 			<p>{text}</p>
+			<a href="/">Learn more</a>
 		</Container>
 	);
 }
@@ -22,9 +23,41 @@ const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+
+	text-align: start;
+
+	@media screen and (max-width: 850px) {
+		padding: 3rem;
+	}
 
 	@media screen and (max-width: 450px) {
 		min-height: 100vw;
+		text-align: center;
+		padding: 1.75rem;
+	}
+
+	h1 {
+		color: var(--very-dark-desaturated-blue);
+		font-size: 2.25rem;
+		margin-bottom: 1.5rem;
+	}
+
+	p {
+		color: var(--dark-grayish-blue);
+		font-size: 1.125rem;
+		line-height: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	a {
+		color: var(--very-dark-desaturated-blue);
+		font-size: 1rem;
+		font-weight: 900;
+		font-family: "Fraunces", serif;
+		text-transform: uppercase;
+
+		margin-bottom: 1.5rem;
+		text-decoration-color: var(--yellow);
+		text-decoration-thickness: 0.25rem;
 	}
 `;

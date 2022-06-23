@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-	padding: 5rem 2.5rem;
+	padding: 7.5rem 2.5rem;
 
 	h1 {
-		font-size: 1rem;
+		font-size: 1.125rem;
 		color: var(--grayish-blue);
 
 		text-align: center;
