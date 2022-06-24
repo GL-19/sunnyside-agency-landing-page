@@ -11,32 +11,30 @@ export function DropDown({ children }: DropDownProps) {
 	const [isActive, setIsActive] = useState(false);
 
 	return (
-		<Container>
+		<div>
 			<img
 				src={dropDownIcon}
 				alt="drop-down-icon"
 				onClick={() => setIsActive(!isActive)}
 			/>
-			{isActive && <div>{children}</div>}
-		</Container>
+			{isActive && <DropDownContent>{children}</DropDownContent>}
+		</div>
 	);
 }
 
-const Container = styled.div`
-	div {
-		display: "flex";
-		flex-direction: column;
-		align-items: center;
+const DropDownContent = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-		position: absolute;
-		margin: 1rem -14.5rem;
+	position: absolute;
+	margin: 1rem -14.5rem;
 
-		max-width: 90vw;
-		min-width: 16rem;
+	max-width: 90vw;
+	min-width: 16rem;
 
-		padding: 2rem;
-		gap: 2rem;
+	padding: 2rem;
+	gap: 2rem;
 
-		background-color: var(--white);
-	}
+	background-color: var(--white);
 `;
