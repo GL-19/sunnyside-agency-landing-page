@@ -3,13 +3,13 @@ import { Footer } from "./components/Footer";
 import { Gallery } from "./components/Gallery";
 import { Header } from "./components/Header";
 import { LandingPageMain } from "./components/LandingPageMain";
-import { useScreenWidthThreshold } from "./hooks/useScreenWidthThreshold";
+import { useIsWindowBiggerThanThreshold } from "./hooks/useIsWindowBiggerThanThreshold";
 
 function App() {
-	const isDesktop = useScreenWidthThreshold(850);
+	const isBigger = useIsWindowBiggerThanThreshold(850);
 	return (
 		<main>
-			<Header isDesktop={isDesktop} />
+			<Header isDesktop={isBigger} />
 			<LandingPageMain />
 			<ClientsTestimonials />
 			<Gallery />

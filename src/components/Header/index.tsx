@@ -1,7 +1,7 @@
 import arrowDown from "../../images/icon-arrow-down.svg";
 import { HeaderLogo } from "../Logos/HeaderLogo";
 
-import { DropDown } from "../DrowDown";
+import { DropDown } from "../DropDown";
 import { LinkButton, ContactButton } from "../Buttons";
 import { Container, DesktopLinksContainer, HeaderContainer } from "./styles";
 
