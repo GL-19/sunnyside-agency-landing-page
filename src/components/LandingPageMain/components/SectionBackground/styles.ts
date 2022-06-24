@@ -24,9 +24,19 @@ export const Container = styled.div<ContainerProps>`
 	background: no-repeat url(${({ desktopBackground }) => desktopBackground});
 	background-size: 100% 100%;
 
+	@media screen and (max-width: 850px) {
+		min-height: 65vw;
+	}
+
+	@media screen and (max-width: 650px) {
+		background-image: url(${({ mobileBackground }) => mobileBackground});
+		min-height: 100vw;
+	}
+
 	@media screen and (max-width: 450px) {
 		min-height: 125vw;
 		background-image: url(${({ mobileBackground }) => mobileBackground});
+		padding-bottom: 1.5rem;
 	}
 
 	h2,
@@ -47,10 +57,6 @@ export const TextContainer = styled.div`
 	max-width: 60%;
 	margin-bottom: 10vw;
 	height: auto;
-
-	@media screen and (max-width: 650px) {
-		max-width: 70%;
-	}
 
 	@media screen and (max-width: 450px) {
 		max-width: 80%;
