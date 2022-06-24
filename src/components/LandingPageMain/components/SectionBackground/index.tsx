@@ -17,6 +17,7 @@ export function SectionBackground({
 }: SectionBackgroundProps) {
 	return (
 		<Container
+			data-testid="section-background"
 			color={color}
 			desktopBackground={desktopBackground}
 			mobileBackground={mobileBackground}
