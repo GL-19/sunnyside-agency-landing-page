@@ -9,7 +9,6 @@ export const LinksContainer = styled.div`
 
 export const IconsContainer = styled.div`
 	width: 10rem;
-	margin-top: 2.5rem;
 
 	display: flex;
 	justify-content: space-between;

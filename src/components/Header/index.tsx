@@ -1,5 +1,5 @@
 import arrowDown from "../../images/icon-arrow-down.svg";
-import { HeaderLogo } from "../Logo";
+import { HeaderLogo } from "../Logos";
 
 import { DropDown } from "../DrowDown";
 import { LinkButton, ContactButton } from "../Buttons";
@@ -13,7 +13,9 @@ function Header({ isDesktop }: HeaderProps) {
 	return (
 		<Container>
 			<HeaderContainer>
-				<HeaderLogo />
+				<a href="/">
+					<HeaderLogo />
+				</a>
 				<div>
 					{isDesktop ? (
 						<DesktopLinksContainer>

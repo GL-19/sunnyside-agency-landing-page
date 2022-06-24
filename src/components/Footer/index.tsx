@@ -2,14 +2,16 @@ import facebookIcon from "../../images/icon-facebook.svg";
 import twitterIcon from "../../images/icon-twitter.svg";
 import instagramIcon from "../../images/icon-instagram.svg";
 import pinterestIcon from "../../images/icon-pinterest.svg";
-import { FooterLogo } from "../Logo";
+import { FooterLogo } from "../Logos";
 import { FooterContainer, Icon, IconsContainer, LinksContainer } from "./styles";
 import { LinkButton } from "../Buttons";
 
 export function Footer() {
 	return (
 		<FooterContainer>
-			<FooterLogo />
+			<a href="/">
+				<FooterLogo />
+			</a>
 
 			<LinksContainer>
 				<LinkButton color="darkDesaturatedCyan">About</LinkButton>
