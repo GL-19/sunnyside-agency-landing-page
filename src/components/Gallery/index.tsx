@@ -13,12 +13,22 @@ export function Gallery() {
 	return (
 		<GalleryContainer>
 			<GalleryImage
+				data-testid="gallery-image"
 				desktopBackground={desktopMilkBottles}
 				mobileBackground={mobileMilkBottles}
 			/>
-			<GalleryImage desktopBackground={desktopOrange} mobileBackground={mobileOrange} />
-			<GalleryImage desktopBackground={desktopCone} mobileBackground={mobileCone} />
 			<GalleryImage
+				data-testid="gallery-image"
+				desktopBackground={desktopOrange}
+				mobileBackground={mobileOrange}
+			/>
+			<GalleryImage
+				data-testid="gallery-image"
+				desktopBackground={desktopCone}
+				mobileBackground={mobileCone}
+			/>
+			<GalleryImage
+				data-testid="gallery-image"
 				desktopBackground={desktopSugarcubes}
 				mobileBackground={mobileSugarcubes}
 			/>
