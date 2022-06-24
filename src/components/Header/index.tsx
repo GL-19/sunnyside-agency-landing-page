@@ -1,5 +1,5 @@
 import arrowDown from "../../images/icon-arrow-down.svg";
-import { HeaderLogo } from "../Logos";
+import { HeaderLogo } from "../Logos/HeaderLogo";
 
 import { DropDown } from "../DrowDown";
 import { LinkButton, ContactButton } from "../Buttons";

@@ -2,7 +2,7 @@ import facebookIcon from "../../images/icon-facebook.svg";
 import twitterIcon from "../../images/icon-twitter.svg";
 import instagramIcon from "../../images/icon-instagram.svg";
 import pinterestIcon from "../../images/icon-pinterest.svg";
-import { FooterLogo } from "../Logos";
+import { FooterLogo } from "../Logos/FooterLogo";
 import { FooterContainer, Icon, IconsContainer, LinksContainer } from "./styles";
 import { LinkButton } from "../Buttons";
 
