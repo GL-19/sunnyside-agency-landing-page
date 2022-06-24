@@ -28,7 +28,7 @@ export function ClientsTestimonials() {
 
 				<Testimonial
 					imageSrc={jennieImg}
-					testimonial="	Incredible end result! Our sales increased over 400% when we worked with
+					testimonial="Incredible end result! Our sales increased over 400% when we worked with
         Sunnyside. Highly recommended!"
 					clientName="Jennie F."
 					clientJob="Business Owner"
