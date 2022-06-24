@@ -1,30 +1,30 @@
 import { ReactNode, useState } from "react";
 import styled from "styled-components";
 
-import hamburger from "../../images/icon-hamburger.svg";
+import dropDownIcon from "../../images/icon-hamburger.svg";
 
 interface DropDownProps {
 	children: ReactNode;
-}
-
-interface ContainerProps {
-	isActive: boolean;
 }
 
 export function DropDown({ children }: DropDownProps) {
 	const [isActive, setIsActive] = useState(false);
 
 	return (
-		<Container isActive={isActive}>
-			<img src={hamburger} alt="hamburguer" onClick={() => setIsActive(!isActive)} />
-			<div>{children}</div>
+		<Container>
+			<img
+				src={dropDownIcon}
+				alt="drop-down-icon"
+				onClick={() => setIsActive(!isActive)}
+			/>
+			{isActive && <div>{children}</div>}
 		</Container>
 	);
 }
 
-const Container = styled.div<ContainerProps>`
+const Container = styled.div`
 	div {
-		display: ${({ isActive }) => (isActive ? "flex" : "none")};
+		display: "flex";
 		flex-direction: column;
 		align-items: center;
 
